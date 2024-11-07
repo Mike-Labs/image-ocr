@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> OCR APP </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-margin">
+
+    <div class="illustration p-16 mt-16">
+      <img src="../../../assets/ocr_main_processed.png" alt="">
+    </div>
+
+    <ion-button 
+      expand="block" 
+      (click)="captureAndExtractText()">
+      Capture and Extract Text
+    </ion-button>
+  
+    @for(item of textDetections; track $index) {
+      <ion-item>
+        <ion-label>
+          {{ item.text }}
+        </ion-label>
+      </ion-item>
+    }
+
+  </div>
+
+</ion-content>

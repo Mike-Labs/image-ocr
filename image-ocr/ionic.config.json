@@ -1,0 +1,7 @@
+{
+  "name": "image-ocr",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
